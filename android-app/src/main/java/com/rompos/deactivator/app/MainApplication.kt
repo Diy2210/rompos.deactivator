@@ -1,9 +1,7 @@
-// MOVE:APP_ID
-
-package org.example.app // REPLACE:org.example.app:APP_ID
+package com.rompos.deactivator.app
 
 import android.app.Application
-import org.example.mpp.App
+import com.rompos.deactivator.mpp.App
 
 class MainApplication : Application() {
     override fun onCreate() {

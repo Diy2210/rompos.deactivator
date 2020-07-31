@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- REPLACE:moko-app:APP_DISPLAY_NAME -->
-    <string name="app_name">moko-app</string>
+    <string name="app_name">Deactivator</string>
+    <string name="all_rights_reserved">All rights reserved</string>
 </resources>

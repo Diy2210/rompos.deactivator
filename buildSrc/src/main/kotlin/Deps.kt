@@ -16,6 +16,8 @@ object Deps {
             "dev.icerock.moko:units-generator:${Versions.Plugins.mokoUnits}"
         const val mokoWidgets =
             "dev.icerock.moko.widgets:gradle-plugin:${Versions.Plugins.mokoWidgets}"
+        const val sqldelight =
+            "com.squareup.sqldelight:gradle-plugin:${Versions.sqldelight}"
     }
 
     object Libs {
@@ -131,6 +133,13 @@ object Deps {
                 iosX64 = "com.github.aakira:napier-iosX64:${Versions.Libs.MultiPlatform.napier}",
                 iosArm64 = "com.github.aakira:napier-iosArm64:${Versions.Libs.MultiPlatform.napier}"
             )
+            val lifecycle = MultiPlatformLibrary(
+                android = "androidx.lifecycle:lifecycle-extensions:${Versions.Libs.Android.lifecycle}"
+            )
+            val sqldelight = MultiPlatformLibrary(
+                android = "com.squareup.sqldelight:android-driver:${Versions.sqldelight}",
+                ios = "com.squareup.sqldelight:native-driver:${Versions.sqldelight}"
+            )
         }
     }
 
@@ -140,6 +149,7 @@ object Deps {
         "dev.icerock.mobile.multiplatform-resources" to Plugins.mokoResources,
         "dev.icerock.mobile.multiplatform-network-generator" to Plugins.mokoNetwork,
         "dev.icerock.mobile.multiplatform-units" to Plugins.mokoUnits,
-        "dev.icerock.mobile.multiplatform-widgets-generator" to Plugins.mokoWidgets
+        "dev.icerock.mobile.multiplatform-widgets-generator" to Plugins.mokoWidgets,
+        "com.squareup.sqldelight" to Plugins.sqldelight
     )
 }
